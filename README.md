@@ -11,9 +11,11 @@ Placera först chauffören och passagerarna på bussen genom att "hårdkoda" in 
 Därefter vill chauffören räkna hur många som ska kliva av i centrum. Till detta värde behöver vi en variabel (passengersToCentrum), samt en jämförelseoperator (==). 
 Enklast är att använda bussens .forEach-metod för att loopa igenom alla personer och addera 1 till passengersToCentrum.
 
+Alternativt kan du använda array-metoden .filter() för att få ett resultat i form av en array.
 #### Tekniker & metoder
 ```javascript
 .push()
 .forEach()
+.filter()
 if
 ``` 

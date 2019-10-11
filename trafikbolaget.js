@@ -39,3 +39,10 @@ bus.forEach(function (person) {
         passengersToCentrum++;
     }
 })
+
+// Alternativ lösning med en .filter-metod. De passagerare som ska av i centrum sparas i variabeln passengersToCentrum (som då växlar typ från number till array).
+passengersToCentrum = bus.filter(function (person) {
+    return person.destination == "centrum";
+})
+// Skriv ut antalet.
+console.log(passengersToCentrum.length);
