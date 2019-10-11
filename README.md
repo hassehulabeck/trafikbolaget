@@ -1,14 +1,13 @@
 # Trafikbolaget
 ## En genomgång av javaScript i kapitelform
 I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser uppgiften.
-### Kapitel 1 - Chaufför och passagerare
-#### Kunskaper: Stränghantering och funktion
-#### Uppgift: Skapa personer.
-Skapa en chaufför och tre passagerare. Chauffören och passagerarna ska ha för- och efternamn. Använd strängar, inte objekt för personerna!
-Skriv en funktion som returnerar förnamnet på den person som du skickar med som argument. 
+### Kapitel 2 - Bussen
+#### Kunskaper: Array
+#### Uppgift: Fyll bussen.
+Skapa en variabel som utgör bussen.
+Placera sedan chauffören och de tre passagerarna i den.
+Använd sedan array-metoderna .pop() och .shift() för släppa av den sista respektive den första personen i bussen.
+
+Låt sedan dessa två personer kliva på bussen igen, genom att använda array-metoderna .push() och .unshift()
 #### Tekniker & metoder
-.indexOf, .slice.
-Funktionsanropet ska se ut så här: 
-```javascript
-console.log(getFirstName(driver));
-```
+.pop(), .shift(), .push() och .unshift()

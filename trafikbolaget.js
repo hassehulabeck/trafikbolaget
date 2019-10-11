@@ -6,15 +6,20 @@ var passenger1 = "Filip Jovetevic";
 var passenger2 = "Kim Hyeung";
 var passenger3 = "Amanda Ringskog";
 
-// Skriv ut förnamnet
-function getFirstName(person) {
-    // Skapa en lokal variabel som ska innehålla personens förnamn.
-    let firstName;
-    // Och en variabel som lagrar positionen för mellanslaget i namnet.
-    let blankspace = person.indexOf(" ");
-    // Hämta sedan ut alla bokstäver från position 0 till mellanslaget.
-    firstName = person.slice(0, blankspace);
+// Definiera en variabel som har värdetypen array.
+var bus = [];
 
-    // Till slut använder vi return för att skicka tillbaks värdet.
-    return firstName;
-}
+// Låt alla personer gå på bussen.
+bus = [driver, passenger1, passenger2, passenger3];
+
+// Släpp av den sista passageraren.
+bus.pop();
+
+// Släpp av den första personen (alltså chauffören)
+bus.shift();
+
+//Låt chauffören gå tillbaks in i bussen igen.
+bus.unshift(driver);
+
+//Låt passagerare3 gå på igen.
+bus.push(passenger3);
