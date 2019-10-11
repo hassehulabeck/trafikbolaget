@@ -29,13 +29,14 @@ var passenger3 = {
 // Skapa bussen och tilldela värdet i en och samma instruktion.
 let bus = [driver, passenger1, passenger2, passenger3];
 
-// Definiera en variabel för att räkna passagerare till centrum.
-var passengersToCentrum = 0;
-
-// Iterera/loopa alla personer i bussen och räkna vilka som ska till centrum. "person" är den temporära variabel som innehåller en av de fyra personerna på bussen, en ny person för varje iteration.
-bus.forEach(function (person) {
+// Framme i centrum ska några personer gå av.
+bus.forEach(function (person, index) {
+    // Använd index för att ha en räknare som håller reda på personerna.
     if (person.destination == "centrum") {
-        // ++ är ett snabbt sätt att skriva "öka med 1".
-        passengersToCentrum++;
+        bus.splice(index, 1); // En person ska gå av.
     }
 })
+
+/* En .forEach (och alla andra array-metoder) håller naturligtvis reda 
+på antalet element, men när vi vill göra någon manipulering, beräkning eller
+liknande, är index en behändig variabel att nyttja. */
