@@ -10,4 +10,9 @@ Använd sedan array-metoderna .pop() och .shift() för släppa av den sista resp
 
 Låt sedan dessa två personer kliva på bussen igen, genom att använda array-metoderna .push() och .unshift()
 #### Tekniker & metoder
-.pop(), .shift(), .push() och .unshift()
+```javascript
+.pop()
+.shift()
+.push()
+.unshift()
+```
