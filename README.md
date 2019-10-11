@@ -1,13 +1,19 @@
 # Trafikbolaget
 ## En genomgång av javaScript i kapitelform
 I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser uppgiften.
-### Kapitel 3 - Personer som objekt
+### Kapitel 4 - Passagerare 2 har ändrat sig
 #### Kunskaper: Objekt
-#### Uppgift: Utveckla personerna.
-Att representera personer med värdetypen sträng duger ibland, men när vi vill spara mer än namnet kan det vara bra att använda objekt.
-
-Gör om passagerna och chauffören till objekt. Varje person ska ha egenskaperna name, age och place. Passagerarna ska dessutom ha egenskapen destination (så att vi vet var de ska stiga av.)
-
-Låt alla passagerare ha destination satt till "centrum", och låt chauffören ha egenskapen place satt till "driving seat", medan passagerarna har siffervärden mellan 0-20 som anger var i bussen de sitter.
+#### Uppgift: Ändra egenskaperna.
+Objekt har ofta flera egenskaper, och de behöver vi emellanåt ändra på.
+Skriv kod som motsvarar att passagerare 2 ändrar sig, och istället för "centrum" vill åka till "hemvägen".
+Ändra också på place för passagerare 1 så att han/hon flyttar sig längst bak i bussen (plats 20).
+Lägg också till en egenskap för passagerare 3, som har blivit åksjuk. I och med att det är ett tillstånd som man antingen lider av eller inte, så passar värdetypen ```boolean``` bra till den egenskapen. 
+Namnet på egenskaper som har ett boolskt värde bör helst skrivas så att de är enkla att utläsa och förstå, exempelvis:
+```javascript
+isActive: true
+```
 #### Tekniker & metoder
-```object``` 
+```javascript
+object
+boolean
+``` 

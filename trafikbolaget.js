@@ -24,3 +24,8 @@ var passenger3 = {
     place: 18,
     destination: "centrum"
 }
+
+// Här ändrar vi på egenskaperna för passagerarna.
+passenger1.place = 20;
+passenger2.destination = "Hemvägen";
+passenger3.hasMotionSickness = true;
