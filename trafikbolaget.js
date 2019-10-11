@@ -1,25 +1,26 @@
 // Variabler för chauffören.
-var driver = "Irene Gustavsson";
+var driver = {
+    name: "Irene Gustavsson",
+    age: 38,
+    place: "driver seat"
+}
 
 // Variabler för passagerarna
-var passenger1 = "Filip Jovetevic";
-var passenger2 = "Kim Hyeung";
-var passenger3 = "Amanda Ringskog";
-
-// Definiera en variabel som har värdetypen array.
-var bus = [];
-
-// Låt alla personer gå på bussen.
-bus = [driver, passenger1, passenger2, passenger3];
-
-// Släpp av den sista passageraren.
-bus.pop();
-
-// Släpp av den första personen (alltså chauffören)
-bus.shift();
-
-//Låt chauffören gå tillbaks in i bussen igen.
-bus.unshift(driver);
-
-//Låt passagerare3 gå på igen.
-bus.push(passenger3);
+var passenger1 = {
+    name: "Filip Jovetevic",
+    age: 23,
+    place: 4,
+    destination: "centrum"
+}
+var passenger2 = {
+    name: "Kim Hyeung",
+    age: 85,
+    place: 5,
+    destination: "centrum"
+}
+var passenger3 = {
+    name: "Amanda Ringskog",
+    age: 49,
+    place: 18,
+    destination: "centrum"
+}

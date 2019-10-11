@@ -1,13 +1,13 @@
 # Trafikbolaget
 ## En genomgång av javaScript i kapitelform
 I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser uppgiften.
-### Kapitel 2 - Bussen
-#### Kunskaper: Array
-#### Uppgift: Fyll bussen.
-Skapa en variabel som utgör bussen.
-Placera sedan chauffören och de tre passagerarna i den.
-Använd sedan array-metoderna .pop() och .shift() för släppa av den sista respektive den första personen i bussen.
+### Kapitel 3 - Personer som objekt
+#### Kunskaper: Objekt
+#### Uppgift: Utveckla personerna.
+Att representera personer med värdetypen sträng duger ibland, men när vi vill spara mer än namnet kan det vara bra att använda objekt.
 
-Låt sedan dessa två personer kliva på bussen igen, genom att använda array-metoderna .push() och .unshift()
+Gör om passagerna och chauffören till objekt. Varje person ska ha egenskaperna name, age och place. Passagerarna ska dessutom ha egenskapen destination (så att vi vet var de ska stiga av.)
+
+Låt alla passagerare ha destination satt till "centrum", och låt chauffören ha egenskapen place satt till "driving seat", medan passagerarna har siffervärden mellan 0-20 som anger var i bussen de sitter.
 #### Tekniker & metoder
-.pop(), .shift(), .push() och .unshift()
+```object``` 
