@@ -1,19 +1,19 @@
 # Trafikbolaget
 ## En genomgång av javaScript i kapitelform
 I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser uppgiften.
-### Kapitel 4 - Passagerare 2 har ändrat sig
-#### Kunskaper: Objekt
-#### Uppgift: Ändra egenskaperna.
-Objekt har ofta flera egenskaper, och de behöver vi emellanåt ändra på.
-Skriv kod som motsvarar att passagerare 2 ändrar sig, och istället för "centrum" vill åka till "hemvägen".
-Ändra också på place för passagerare 1 så att han/hon flyttar sig längst bak i bussen (plats 20).
-Lägg också till en egenskap för passagerare 3, som har blivit åksjuk. I och med att det är ett tillstånd som man antingen lider av eller inte, så passar värdetypen ```boolean``` bra till den egenskapen. 
-Namnet på egenskaper som har ett boolskt värde bör helst skrivas så att de är enkla att utläsa och förstå, exempelvis:
-```javascript
-isActive: true
-```
+### Kapitel 5 - All abord!
+#### Kunskaper: Objekt & Array
+#### Uppgift: Fyll bussen och räkna egenskaper.
+Lösa objekt är förvisso trevligt, men det är nästan alltid bäst att samla ihop dem i en array, eftersom vi då kan dra nytta av massor av arraymetoder.
+
+Placera först chauffören och passagerarna på bussen genom att "hårdkoda" in dem. "Hårdkoda" innebär att vi skriver en instruktion väldigt odynamiskt.
+
+Därefter vill chauffören räkna hur många som ska kliva av i centrum. Till detta värde behöver vi en variabel (passengersToCentrum), samt en jämförelseoperator (==). 
+Enklast är att använda bussens .forEach-metod för att loopa igenom alla personer och addera 1 till passengersToCentrum.
+
 #### Tekniker & metoder
 ```javascript
-object
-boolean
+.push()
+.forEach()
+if
 ``` 
