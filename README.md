@@ -1,19 +1,15 @@
 # Trafikbolaget
 ## En genomgång av javaScript i kapitelform
 I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser uppgiften.
-### Kapitel 5 - All abord!
-#### Kunskaper: Objekt & Array
-#### Uppgift: Fyll bussen och räkna egenskaper.
-Lösa objekt är förvisso trevligt, men det är nästan alltid bäst att samla ihop dem i en array, eftersom vi då kan dra nytta av massor av arraymetoder.
-
-Placera först chauffören och passagerarna på bussen genom att "hårdkoda" in dem. "Hårdkoda" innebär att vi skriver en instruktion väldigt odynamiskt.
-
-Därefter vill chauffören räkna hur många som ska kliva av i centrum. Till detta värde behöver vi en variabel (passengersToCentrum), samt en jämförelseoperator (==). 
-Enklast är att använda bussens .forEach-metod för att loopa igenom alla personer och addera 1 till passengersToCentrum.
+### Kapitel 6 - Framme i centrum
+#### Kunskaper: Objekt & Array & villkor
+#### Uppgift: Släpp av de som ska gå av i centrum.
+Använd antingen en .forEach-metod på bussen och i denna metod ett villkor för att avgöra vilka passagerare som ska gå av, vilket du kan göra med array-metoden .splice().
 
 #### Tekniker & metoder
 ```javascript
-.push()
+.splice()
 .forEach()
 if
+
 ``` 
