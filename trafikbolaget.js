@@ -1,42 +1,22 @@
-// Variabler för chauffören.
-var driver = {
-    name: "Irene Gustavsson",
-    age: 38,
-    place: "driver seat"
-}
+// En array med förnamn. Notera bokstaven "s" på slutet, som markerar att det rör sig om flera namn.
+var firstNames = ["Olle", "Ali", "Ibrahim", "Gustav", "Franz", "Kim", "Pontus", "Morgan", "Adam", "Volfram", "Britt", "Maria", "Justina", "Camille", "Lotta", "Therese", "Anna", "Erica", "Lisa", "Amanda"];
+// En array med efternamn
+var lastNames = ["Ashton", "Bolinder", "Claesson", "Desmond", "Ek", "Flood", "Gustavsson", "Haider", "Icander", "Joos", "Kelvin", "Larsson", "Malmgren", "Norlander", "Ohlin", "Pettersson", "Qwast", "Rolin", "Schwartz", "Thorén"];
 
-// Variabler för passagerarna
-var passenger1 = {
-    name: "Filip Jovetevic",
-    age: 23,
-    place: 20,
-    destination: "centrum"
+/* Ordet this syftar till den instans av objektet Person som skapas.
+Att Person har en versal initialbokstav beror på att det här är en så kallad constructor-funktion, eller factory. Namnet på en sådan funktion bör alltid vara i singular, eftersom funktionen bara skapar en av någonting. */
+function Person(firstName, lastName) {
+    this.name = firstName + " " + lastName;
+    // Slumpa fram en ålder mellan 10 och 99.
+    this.age = Math.floor(Math.random() * 89) + 10;
 }
-var passenger2 = {
-    name: "Kim Hyeung",
-    age: 85,
-    place: 5,
-    destination: "Hemvägen"
+// Skapa en array som ska lagra alla personer.
+var passengers = [];
+
+// Anropa funktionen 100 gånger
+for (let i = 0; i < 100; i++) {
+    // Slumpa fram ett för- och ett efternamn.
+    let firstName = firstNames[Math.floor(Math.random() * firstNames.length)];
+    let lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
+    passengers.push(new Person(firstName, lastName));
 }
-var passenger3 = {
-    name: "Amanda Ringskog",
-    age: 49,
-    place: 18,
-    destination: "centrum",
-    hasMotionSickness: true
-}
-
-// Skapa bussen och tilldela värdet i en och samma instruktion.
-let bus = [driver, passenger1, passenger2, passenger3];
-
-// Framme i centrum ska några personer gå av.
-bus.forEach(function (person, index) {
-    // Använd index för att ha en räknare som håller reda på personerna.
-    if (person.destination == "centrum") {
-        bus.splice(index, 1); // En person ska gå av.
-    }
-})
-
-/* En .forEach (och alla andra array-metoder) håller naturligtvis reda 
-på antalet element, men när vi vill göra någon manipulering, beräkning eller
-liknande, är index en behändig variabel att nyttja. */
