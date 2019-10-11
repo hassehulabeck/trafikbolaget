@@ -20,3 +20,13 @@ for (let i = 0; i < 100; i++) {
     let lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
     passengers.push(new Person(firstName, lastName));
 }
+
+// Sortera passagerarna
+passengers.sort(function (a, b) {
+    if (a.age > b.age) {
+        return 1;
+    }
+    if (a.age < b.age) {
+        return -1;
+    }
+})

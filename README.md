@@ -1,19 +1,16 @@
 # Trafikbolaget
 ## En genomgång av javaScript i kapitelform
 I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser uppgiften.
-### Kapitel 7 - Massa passagerare
-#### Kunskaper: Objekt
-#### Uppgift: Skapa många passagerare.
-Tre passagerare är trevligt, men det skulle ju kunna vara kul att laborera med väldigt många passagerare. Så därför ska vi bygga en passagerar-fabrik (factory).
+### Kapitel 8 - Sortera passagerarna
+#### Kunskaper: Array & objekt
+#### Uppgift: Sortera passagerare.
+En vanlig uppgift är att sortera arrayer utifrån någon egenskap. Arrayer har en inbyggd .sort-metod, men den är ganska dålig. Därför måste man oftast skriva en egen metod som .sort-metoden anropar.
 
-En factory i javaScript är en funktion som returnerar *instanser* av ett objekt. Den behöver oftast lite "råvaror", så det kan vara bra att lagra dem i olika arrayer.
+Nästan alla sort-metoder tar två argument, vanligen kallade a och b, och gör en jämförelse av dem eller deras egenskaper, och ordnar dem inbördes. A och b motsvarar två element i arrayen, och sorteringen fortsätter sedan med två andra element. Sorteringsfunktionen ska returnera antingen 1 eller -1, vilket motsvarar stigande respektive fallande ordning.
 
-Skapa en array som innehåller tio manliga förnamn och tio kvinnliga. Skapa därefter en array som innehåller tjugo olika efternamn.
-Bygg därefter en factory-funktion som tar emot två argument (firstName, lastName) och skapar passagerare. Låt funktionen slumpa fram en ålder mellan 10-99 år. 
-Anropa funktionen så att den skapar 100 passagerare.
+Skriv en sorteringsfunktion som sorterar passagerarna stigande efter ålder.
 
 #### Tekniker & metoder
 ```javascript
-new
-Math
+.sort()
 ``` 
