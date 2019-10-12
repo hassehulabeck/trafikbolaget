@@ -21,12 +21,52 @@ for (let i = 0; i < 100; i++) {
     passengers.push(new Person(firstName, lastName));
 }
 
-// Sortera passagerarna
-passengers.sort(function (a, b) {
-    if (a.age > b.age) {
-        return 1;
+
+// Skapa bussen
+var bus = {
+    id: 1,
+    linje: 1,
+    driver: {
+        name: "Olle Blom",
+        age: 53
+    },
+    passengers: [],
+    nextStop: null,
+    isAtStop: false,
+    maxPassengers: 20,
+    emptySeats: function () {
+        return this.maxPassengers - this.passengers.length;
+    },
+    loadPassengers: function (passengers) {
+        if (this.emptySeats() == 0) {
+            throw new Error("Bussen är full");
+        } else if (passengers.length > this.emptySeats()) {
+            // Fyll på med så många det går
+            let amount = this.emptySeats();
+            for (i = 0; i < amount; i++) {
+                // Fyll bussen med den passagerare som står först i kön.
+                this.passengers.push(passengers.shift());
+            }
+        } else {
+            // Fyll på med alla passagerare som vill gå ombord.
+            this.passengers = [...this.passengers, ...passengers];
+        }
     }
-    if (a.age < b.age) {
-        return -1;
-    }
-})
+}
+
+
+// Låt alla passagerare försöka kliva på bussen.
+bus.loadPassengers(passengers);
+
+console.log("Antal passagerare på bussen: " + bus.passengers.length);
+console.log("Antal lediga platser: " + bus.emptySeats());
+
+// Bussen bör nu vara full, men låt oss prova igen med de återstående passagerarna.
+try {
+    bus.loadPassengers(passengers)
+} catch (e) {
+    console.log(e);
+}
+
+/* Här kör jag instruktionen inne i ett try/catch-block. Det innebär att js försöker köra instruktionen, och om det skulle bli fel någonstans, så fångas det upp av catch-delen.
+Själva felet genereras av koden på rad 42, och skickar tillbaka ett error-objekt med ett egendefinierat meddelande. */

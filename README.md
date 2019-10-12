@@ -1,16 +1,23 @@
 # Trafikbolaget
 ## En genomgång av javaScript i kapitelform
 I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser uppgiften.
-### Kapitel 8 - Sortera passagerarna
+### Kapitel 9 - Uppgradera bussen
 #### Kunskaper: Array & objekt
-#### Uppgift: Sortera passagerare.
-En vanlig uppgift är att sortera arrayer utifrån någon egenskap. Arrayer har en inbyggd .sort-metod, men den är ganska dålig. Därför måste man oftast skriva en egen metod som .sort-metoden anropar.
+#### Uppgift: Definiera en buss.
+Nu när vi har skapat 100 personer, så uppstår ju behovet av en fungerande kollektivtrafik. Tidigare skapade vi en buss, men den hade ingen fast plats i tillvaron.
+Låt oss nu skapa en ny buss, den här gången i form av ett objekt. Det kan vara av nytta för oss, eftersom även en buss har ett antal egenskaper.
+Ge bussen egenskaperna **id, linje, driver, passengers, nextStop, isAtStop och maxPassengers**. I det här skedet kan vi tillåta oss att hårdkoda en buss, och då ge den värdena 1, 1, {name: "Olle Blom", age: 53}, [], null, false och 20.
 
-Nästan alla sort-metoder tar två argument, vanligen kallade a och b, och gör en jämförelse av dem eller deras egenskaper, och ordnar dem inbördes. A och b motsvarar två element i arrayen, och sorteringen fortsätter sedan med två andra element. Sorteringsfunktionen ska returnera antingen 1 eller -1, vilket motsvarar stigande respektive fallande ordning.
+Utöver detta ska du också ge bussen egenskapen **loadPassengers**, vars värde ska vara i form av en function. Denna ska ta emot en array med passengers, men innan bussen fylls upp med dessa ska funktionen avgöra om de får plats. Först därefter fyller vi upp platserna.
+Det kan också vara bra att ha en egenskap som heter **emptySeats**, också den i form av en funktion som enbart returnerar antalet lediga platser. På så sätt håller vi funktionen loadPassengers lite renare.
 
-Skriv en sorteringsfunktion som sorterar passagerarna stigande efter ålder.
-
+Testa sedan din funktion genom att skriva lite kod som försöker fylla bussen med samtliga passagerare.
+Prova att utföra den instruktionen två gånger, så att du första gången fyller upp en tom buss, och andra gången försöker fylla en full buss.
+Lägg den senare instruktionen i ett try/catch-block. Utöka också funktionen loadPassengers, så att den genererar ett error-objekt om du försöker fylla på en full buss.
 #### Tekniker & metoder
 ```javascript
-.sort()
+    object
+    this
+    try/catch
+    Error
 ``` 
