@@ -1,18 +1,23 @@
 # Trafikbolaget
 ## En genomgång av javaScript i kapitelform
 I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser uppgiften.
-### Kapitel 11 - Trafikera sträckan
-#### Kunskaper: Array & objekt & funktioner
-#### Uppgift: Placera bussen på linjen.
-Nu ska vi trafikera linjen. För att simulera detta behöver vi skriva en funktion som uppdaterar bussens position.
-Fundera därför en stund över vilken värdetyp som är lämplig att använda till bussobjektets egenskap position.
+### Kapitel 12 - Moduler
+#### Kunskaper: modules
+#### Uppgift: Dela upp koden i självständiga delar.
+Det blir snart ohållbart att skapa passagerare i ett kapitel, för att sedan kopiera den koden om vi behöver dem i ett senare kapitel. 
 
-Bussens riktning kan bara vara två möjliga värden. Normalt kan det vara bra med en boolsk variabel, men i det här fallet föreslår jag ett siffervärde, 1 för ena riktningen, -1 för andra. Det gör att vi kan använda det för att stega hållplats för hållplats på linjen. 
+Och om vi hela tiden bygger på vår kod med mer kod, så har vi strax hundratals rader, vilket blir svårt att överblicka, och svårt att underhålla.
 
-För en dynamisk lösning kanske vi också bör samla trafikbolagets olika linjer i en större array?
+Läge för en ny teknik: **moduler**
+
+Moduler är ett sätt att samla kod som hör ihop i en fil, och sedan göra den koden exporterbar. Därefter kan man importera koden till en annan fil.
+För att få detta att fungera krävs dels att man jobbar med ES6, dels att man använder en webbserver. **Liveserver** i VS Studio Code duger till detta.
+
+Kopiera all passagerarkod och lägg den i en fil som heter passengers.js och lägg all busskod i en fil som heter bus.js och lägg all linjekod i en fil som heter lines.js. I alla dess filer ska du exportera koden.
+Skapa därefter en main.js i vilken du importerar koden från dessa tre filer och kolla sedan att du kommer åt de olika variablerna passengers, bus och linje1.
 #### Tekniker & metoder
 ```javascript
-    array
-    object
-    function
+modules
+import
+export
 ``` 
