@@ -6,7 +6,8 @@ I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser u
 #### Uppgift: Skapa en linje.
 Bussen som vi skapat måste ju nu kunna åka någonstans. Skapa en linje bestående av hållplatser (Skogen, Änggården, Torp södra, Torp C, Dalgången, Resecentrum, Utgården, Norra allén, Norra liden).
 Varje hållplats bör kunna lagra ett antal passagerare.
-Fundera särskilt över vilken värdetyp som är lämplig att använda till bussobjektets egenskap nextStop, dvs att vi vet 
 #### Tekniker & metoder
 ```javascript
+    array
+    object
 ``` 
