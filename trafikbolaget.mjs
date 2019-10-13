@@ -5,13 +5,21 @@ import {
     linje1
 } from './modules/lines.mjs';
 
+// Kolla antalet lediga platser
+console.log(bus.emptySeats());
+
+console.log(passengers.length);
+
 // Fyll på passagerare i bussen.
 bus.loadPassengers(passengers);
+
+// Kolla antalet lediga platser
+console.log(bus.emptySeats());
 
 // Placera bussen i ena änden av linjen.
 bus.position = 0;
 
 // Kör bussen tre hållplatser framåt.
-for (i = 0; i < 3; i++) {
-    bus.move()
+for (let i = 0; i < 3; i++) {
+    bus.move(linje1)
 }

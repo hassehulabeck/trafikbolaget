@@ -16,9 +16,11 @@ Till sist måste vi också lägga till lite information i script-taggen i index.
 ```html
 <script src="trafikbolaget.js" type="module"></script>
 ```
+Skapa sedan en katalog (modules) och i den skapar du sedan de tre filerna nedan (.mjs står för "module js" och skiljer den från övrig .js-kod):
 
-Kopiera all passagerarkod och lägg den i en fil som heter passengers.js och lägg all busskod i en fil som heter bus.js och lägg all linjekod i en fil som heter lines.js. I alla dess filer ska du exportera koden.
+Kopiera all passagerarkod och lägg den i en fil som heter passengers.mjs och lägg all busskod i en fil som heter bus.mjs och lägg all linjekod i en fil som heter lines.mjs. I alla dess filer ska du exportera koden.
 I  trafikbolaget.js importerar du sedan koden från dessa tre filer. Kolla sedan att du kommer åt de olika variablerna passengers, bus och linje1.
+
 #### Tekniker & metoder
 ```javascript
 modules
