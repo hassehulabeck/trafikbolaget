@@ -1,4 +1,5 @@
-var linje = [];
+var linjer = [];
+var linje1 = [];
 
 var stops = ["Skogen", "Änggården", "Torp södra", "Torp C", "Dalgången", "Resecentrum", "Utgården", "Norra allén", "Norra liden"];
 
@@ -11,5 +12,8 @@ function Stop(name) {
 
 stops.forEach(function (stop) {
     var hpl = new Stop(stop);
-    linje.push(hpl);
+    linje1.push(hpl);
 })
+
+// Lägg till linje1 i arrayen som samlar alla linjer.
+linjer = [linje1];
