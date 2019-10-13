@@ -1,13 +1,18 @@
 # Trafikbolaget
 ## En genomgång av javaScript i kapitelform
 I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser uppgiften.
-### Kapitel 10 - En linje från A till Ö
-#### Kunskaper: Array & objekt
-#### Uppgift: Skapa en linje.
-Bussen som vi skapat måste ju nu kunna åka någonstans. Skapa en linje bestående av hållplatser (Skogen, Änggården, Torp södra, Torp C, Dalgången, Resecentrum, Utgården, Norra allén, Norra liden).
-Varje hållplats bör kunna lagra ett antal passagerare.
+### Kapitel 11 - Trafikera sträckan
+#### Kunskaper: Array & objekt & funktioner
+#### Uppgift: Placera bussen på linjen.
+Nu ska vi trafikera linjen. För att simulera detta behöver vi skriva en funktion som uppdaterar bussens position.
+Fundera därför en stund över vilken värdetyp som är lämplig att använda till bussobjektets egenskap position.
+
+Bussens riktning kan bara vara två möjliga värden. Normalt kan det vara bra med en boolsk variabel, men i det här fallet föreslår jag ett siffervärde, 1 för ena riktningen, -1 för andra. Det gör att vi kan använda det för att stega hållplats för hållplats på linjen. 
+
+För en dynamisk lösning kanske vi också bör samla trafikbolagets olika linjer i en större array?
 #### Tekniker & metoder
 ```javascript
     array
     object
+    function
 ``` 
