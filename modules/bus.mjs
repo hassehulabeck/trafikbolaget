@@ -1,24 +1,4 @@
-var linjer = [];
-var linje1 = [];
-
-var stops = ["Skogen", "Änggården", "Torp södra", "Torp C", "Dalgången", "Resecentrum", "Utgården", "Norra allén", "Norra liden"];
-
-// Varje hållplats måste kunna lagra ett antal passagerare, samt ha ett namn. Läge för ett objekt.
-
-function Stop(name) {
-    this.name = name;
-    this.passengers = [];
-}
-
-stops.forEach(function (stop) {
-    var hpl = new Stop(stop);
-    linje1.push(hpl);
-})
-
-// Lägg till linje1 i arrayen som samlar alla linjer.
-linjer = [linje1];
-
-// Skapa bussen (den här gången utan passagerarfunktionerna)
+// Skapa bussen
 var bus = {
     id: 1,
     linje: 1,
@@ -33,6 +13,21 @@ var bus = {
     maxPassengers: 20,
     emptySeats: function () {
         return this.maxPassengers - this.passengers.length;
+    },
+    loadPassengers: function (passengers) {
+        if (this.emptySeats() == 0) {
+            throw new Error("Bussen är full");
+        } else if (passengers.length > this.emptySeats()) {
+            // Fyll på med så många det går
+            let amount = this.emptySeats();
+            for (i = 0; i < amount; i++) {
+                // Fyll bussen med den passagerare som står först i kön.
+                this.passengers.push(passengers.shift());
+            }
+        } else {
+            // Fyll på med alla passagerare som vill gå ombord.
+            this.passengers = [...this.passengers, ...passengers];
+        }
     },
     // En funktion för att flytta bussen ett steg.
     move: function () {
@@ -51,5 +46,4 @@ var bus = {
     }
 }
 
-// Placera bussen i en ände av linje1.
-bus.position = 0;
+export default bus;
