@@ -9,6 +9,8 @@ function Person(firstName, lastName) {
     this.name = firstName + " " + lastName;
     // Slumpa fram en ålder mellan 10 och 99.
     this.age = Math.floor(Math.random() * 89) + 10;
+    // Slumpa fram en destination (en siffra mellan 0-8)
+    this.destination = Math.floor(Math.random() * 8);
 }
 // Skapa en array som ska lagra alla personer.
 var passengers = [];
