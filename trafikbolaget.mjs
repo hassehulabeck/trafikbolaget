@@ -5,6 +5,10 @@ import {
     linje1
 } from './modules/lines.mjs';
 
+// Gör bus global för att testa i consolen.
+// Dock inget som ska användas i produktionsfärdig kod.
+window.bus = bus
+
 // Kolla antalet lediga platser
 console.log(bus.emptySeats());
 
