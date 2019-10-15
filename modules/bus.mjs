@@ -14,19 +14,35 @@ var bus = {
     emptySeats: function () {
         return this.maxPassengers - this.passengers.length;
     },
-    loadPassengers: function (passengers) {
+    changePassengers: function (line, position) {
+        // En funktion som släpper av och på passagerare
+
+        // Först släpper vi av de som ska av. Få fram vilka det är.
+        let avstigande = this.passengers.filter(function (passenger) {
+            return passenger.destination == position;
+        })
+        // Plocka ut dem från bussens passengers-array.
+        var busPassengers = this.passengers;
+        avstigande.forEach(function (avstigare) {
+            let pos = busPassengers.find(function (passenger) {
+                return passenger.id == avstigare.id
+            })
+            busPassengers.splice(pos, 1)
+        })
+
+        // Därefter kollar vi antalet lediga platser.
         if (this.emptySeats() == 0) {
-            throw new Error("Bussen är full");
-        } else if (passengers.length > this.emptySeats()) {
+            console.log("Det finns inga platser kvar.");
+        } else if (line[position].passengers.length > this.emptySeats()) {
             // Fyll på med så många det går
             let amount = this.emptySeats();
             for (let i = 0; i < amount; i++) {
                 // Fyll bussen med den passagerare som står först i kön.
-                this.passengers.push(passengers.shift());
+                busPassengers.push(line[position].passengers.shift());
             }
         } else {
             // Fyll på med alla passagerare som vill gå ombord.
-            this.passengers = [...this.passengers, ...passengers];
+            this.passengers = [...this.passengers, ...line[position].passengers];
         }
     },
     // En funktion för att flytta bussen ett steg.
@@ -40,8 +56,14 @@ var bus = {
         // Flytta bussen genom att använda direction-värdet.
         this.position = this.position + this.direction;
 
-        // Skriv ut var någonstans bussen är.
-        console.log(line[this.position].name);
+        // Skriv ut var någonstans bussen är, samt hur många passagerare den har.
+        this.status(line);
+        // Släpp ut och släpp på passagerare
+        this.changePassengers(line, this.position);
+    },
+    status: function (line) {
+        console.log(line[this.position].name + " (" + line[this.position].passengers.length + ")");
+        console.log("Antal passagerare: " + this.passengers.length);
     }
 }
 
