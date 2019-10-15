@@ -10,7 +10,7 @@ var bus = {
     position: null,
     direction: 1,
     isAtStop: false,
-    maxPassengers: 20,
+    maxPassengers: 60,
     emptySeats: function () {
         return this.maxPassengers - this.passengers.length;
     },
@@ -42,7 +42,6 @@ var bus = {
 
         // Skriv ut var någonstans bussen är.
         console.log(line[this.position].name);
-
     }
 }
 
