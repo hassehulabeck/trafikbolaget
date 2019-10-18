@@ -1,34 +1,22 @@
 # Trafikbolaget
 ## En genomgång av javaScript i kapitelform
 I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser uppgiften.
-### Kapitel 1.2 - Bolagets räkenskaper
-#### Kunskaper: Operatorer & Number-metoder
-#### Uppgift: Räkna på årsredovisningen
+### Kapitel 1.3 - Går det bra?
+#### Kunskaper: Villkor
+#### Uppgift: Jämför värden
 
-Lagra följande värden i olika variabler:
-1. 2016
-* Antal bussresor: 1602
-* Antal resenärer: 23097
-* Biljettintäkter: 1954140
+Lägg till dessa värden i lämplig variabel:
+1. 2018
+* Antal bussresor: 1719
+* Antal resenärer: 21744
+* Biljettintäkter: 2133700
 
-2. 2017
-* Antal bussresor: 1855
-* Antal resenärer: 28431
-* Biljettintäkter: 2239375
+Skriv villkor som:
+* Jämför antalet resenärer för 2018 med medelvärdet för 2016-2017, och skriver ut vilken tidsperiod som hade högst antal.
+* Jämför total antalet bussresor för de tre åren och skriver ut "bra" om värdet är över eller lika med 5300, "okej" om värdet är under 5300 men mer än 5100 eller "dåligt" om värdet är lika med eller under 5100.
 
-
-Räkna ut följande (totalt för båda åren)
-* Totalt antal resenärer
-* Medelvärdet av resenärer
-* Intäkt per resa (utan decimaler)  
-* Intäkt per resenär (med två decimaler)
-* Antalet resor för det år som hade flest antal bussresor
 
 #### Tekniker & metoder
 ```javascript
-variabler
-.toFixed()
-Math.max()
-aritmetiska operatorer
-objekt
+if
 ```
