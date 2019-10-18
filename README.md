@@ -4,7 +4,7 @@ I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser u
 ### Kapitel 2 - Bussen
 #### Bonusfilm
 Unna dig att titta på Midttrafiks legendariska reklamfilm från 2012.
-[https://www.youtube.com/watch?v=N_Si6Jg8-ds]
+https://www.youtube.com/watch?v=N_Si6Jg8-ds
 #### Kunskaper: Array
 #### Uppgift: Fyll bussen.
 Skapa en variabel som utgör bussen.
