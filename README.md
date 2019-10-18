@@ -6,3 +6,9 @@ Använd
 git checkout kapitelnamn
 ```
 för att växla till ett kapitel, så att du kan se lösningsförslag.
+
+Kapitel och innehåll
+1a - Chaufför och passagerare - Stränghantering
+1b - Bolagets räkenskaper - matematiska beräkningar
+1c - - Villkor
+2 - Bussen - Array
