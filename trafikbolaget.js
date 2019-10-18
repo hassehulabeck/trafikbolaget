@@ -17,10 +17,10 @@ let totalPassengers = passengers2016 + numbers2017.passengers;
 let averagePassengers = (passengers2016 + numbers2017.passengers) / 2;
 
 // Intäkt per resa
-var revenuePerTravel = (revenue2016 + numbers2017.revenues) / (travels2016 + numbers2017.travels).toFixed(0);
+var revenuePerTravel = ((revenue2016 + numbers2017.revenues) / (travels2016 + numbers2017.travels)).toFixed(0);
 
 // Intäkt per resenär (använd en tidigare variabel)
-let revenuePerPassenger = (revenue2016 + numbers2017.revenues) / totalPassengers.toFixed(2);
+let revenuePerPassenger = ((revenue2016 + numbers2017.revenues) / totalPassengers).toFixed(2);
 
 // Vilket år hade flest antal resor?
 var bestYearsTravels = Math.max(travels2016, numbers2017.travels);
