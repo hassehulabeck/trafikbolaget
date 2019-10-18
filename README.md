@@ -1,23 +1,34 @@
 # Trafikbolaget
 ## En genomgång av javaScript i kapitelform
 I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser uppgiften.
-### Kapitel 1 - Chaufför och passagerare
-#### Kunskaper: Stränghantering
-#### Uppgift: Skapa personer.
-Skapa en chaufför och tre passagerare. Chauffören och passagerarna ska ha för- och efternamn. Använd strängar, inte objekt för personerna!
-Skriv därefter kod som: 
-* Skriver ut (med console.log) förnamnet på chauffören
-* Skriver ut efternamnet på passagerare 1.
-* Skriver ut efternamnet på passagerare 2 i VERSALER.
-* Ändrar alla "e" eller "E" i namnet på passagerare 3 till "3".
+### Kapitel 1.2 - Bolagets räkenskaper
+#### Kunskaper: Operatorer & Number-metoder
+#### Uppgift: Räkna på årsredovisningen
 
-Se till att du lagrar värdet av de manipulerade strängarna i en ny variabel, och kontrollera dess innehåll genom att skriva namnet på den i webbläsarens console.
+Lagra följande värden i olika variabler:
+1. 2016
+* Antal bussresor: 1602
+* Antal resenärer: 23097
+* Biljettintäkter: 1954140
+
+2. 2017
+* Antal bussresor: 1855
+* Antal resenärer: 28431
+* Biljettintäkter: 2239375
+
+
+Räkna ut följande (totalt för båda åren)
+* Totalt antal resenärer
+* Medelvärdet av resenärer
+* Intäkt per resa (utan decimaler)  
+* Intäkt per resenär (med två decimaler)
+* Antalet resor för det år som hade flest antal bussresor
 
 #### Tekniker & metoder
 ```javascript
 variabler
-.indexOf
-.slice
-.toUpper
-.replace
+.toFixed()
+Math.max()
+aritmetiska operatorer
+objekt
 ```

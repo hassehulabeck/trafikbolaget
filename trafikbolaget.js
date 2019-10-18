@@ -1,31 +1,26 @@
-// Variabler för chauffören.
-var driver = "Irene Gustavsson";
+// Med variabler
+var travels2016 = 1602;
+var passengers2016 = 23097;
+var revenue2016 = 1954140;
 
-// Variabler för passagerarna
-var passenger1 = "Filip Jovetevic";
-var passenger2 = "Kim Hyeung";
-var passenger3 = "Evander Ringskog";
+// Som objekt
+var numbers2017 = {
+    travels: 1855,
+    passengers: 28431,
+    revenues: 2239375
+}
 
-// Skriv ut förnamnet på chauffören
+// Totalt antal resenärer
+let totalPassengers = passengers2016 + numbers2017.passengers;
 
-// Skapa en lokal variabel som ska innehålla personens förnamn.
-let firstName;
+//Medelvärdet av resenärer
+let averagePassengers = (passengers2016 + numbers2017.passengers) / 2;
 
-// Och en variabel som lagrar positionen för mellanslaget i namnet.
-let blankspace = driver.indexOf(" ");
+// Intäkt per resa
+var revenuePerTravel = (revenue2016 + numbers2017.revenues) / (travels2016 + numbers2017.travels).toFixed(0);
 
-// Hämta sedan ut alla bokstäver från position 0 till mellanslaget.
-firstName = driver.slice(0, blankspace);
+// Intäkt per resenär (använd en tidigare variabel)
+let revenuePerPassenger = (revenue2016 + numbers2017.revenues) / totalPassengers.toFixed(2);
 
-// Skriv ut efternamnet på passagerare 1
-let surnameP1 = passenger1.slice(passenger1.indexOf(" ") + 1, );
-
-// Skriv ut EFTERNAMNET på passagerare 2
-let surnameP2 = passenger2.slice(passenger2.indexOf(" ") + 1, ).toUpperCase();
-
-//Byt ut e och E till 3
-let eName = passenger3.replace("e", "3");
-eName = eName.replace("E", "3");
-
-// Alternativt, byt ut både stort och litet E med regex.
-let regexName = passenger3.replace(/[eE]/g, "3");
+// Vilket år hade flest antal resor?
+var bestYearsTravels = Math.max(travels2016, numbers2017.travels);
