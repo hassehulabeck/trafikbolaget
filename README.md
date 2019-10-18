@@ -22,7 +22,7 @@ git checkout -b ny-branch-namn
 4. Passagerare 2 har ändrat sig - Objekt
 5. All abord! - Objekt & Array
 6. Framme i centrum - Objekt & Array & Villkor
-7. Massa passagerare - Objekt
+7. Massa passagerare - Funktioner & Objekt
 8. Sortera passagerarna - Array & Objekt
 9. Uppgradera bussen - Array & Objekt
 10. En linje från A till Ö - Array & Objekt
