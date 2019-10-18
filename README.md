@@ -14,9 +14,9 @@ git checkout -b ny-branch-namn
 
 ### Kapitel och innehåll
 1. Grunderna
-    a. Chaufför och passagerare - Stränghantering
-    b. Bolagets räkenskaper - matematiska beräkningar
-    c. Går det bra? - Villkor
+    1. Chaufför och passagerare - Stränghantering
+    2. Bolagets räkenskaper - matematiska beräkningar
+    3. Går det bra? - Villkor
 2. Bussen - Array
 3. Personer som objekt - Objekt
 4. Passagerare 2 har ändrat sig - Objekt
