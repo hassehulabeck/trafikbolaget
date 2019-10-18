@@ -2,7 +2,7 @@
 ## En genomgång av javaScript i kapitelform
 I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser uppgiften.
 ### Kapitel 7 - Massa passagerare
-#### Kunskaper: Objekt
+#### Kunskaper: Funktioner & objekt
 #### Uppgift: Skapa många passagerare.
 Tre passagerare är trevligt, men det skulle ju kunna vara kul att laborera med väldigt många passagerare. Så därför ska vi bygga en passagerar-fabrik (factory).
 
@@ -15,5 +15,6 @@ Anropa funktionen så att den skapar 100 passagerare.
 #### Tekniker & metoder
 ```javascript
 new
+function
 Math
 ``` 
