@@ -1,25 +1,28 @@
 import {
-    passengers,
-    placePassengers
+    passengers
 } from './modules/passengers.mjs';
-import bus from './modules/bus.mjs';
 import {
-    lines,
-    linje1
-} from './modules/lines.mjs';
+    ticketId,
+    stampTicket,
+    Ticket
+} from './modules/ticket.mjs';
 
-// Gör bus global för att testa i consolen.
-// Dock inget som ska användas i produktionsfärdig kod.
-window.bus = bus
-window.linje1 = linje1
+// Kolla hur många passagerare vi har
+console.log(passengers.length);
 
-// Placera ut passagerarna på linjens hållplatser.
-placePassengers(linje1);
+// Skapa en biljett med 10 credit
+var ticket = new Ticket();
 
-// Placera bussen i ena änden av linjen.
-bus.position = 0;
+// Kolla om biljetten är valid.
+console.log(ticket.isValid());
 
-// Kör bussen tre hållplatser framåt.
-for (let i = 0; i < 3; i++) {
-    bus.move(linje1)
-}
+// Gör passengers och ticket tillgängligt i console
+window.passengers = passengers;
+window.ticket = ticket;
+window.stampTicket = stampTicket;
+
+// Tilldela en ticket till en passagerare.
+passengers[0].ticket = ticket;
+
+// Stämpla biljetten för samma passagerare
+stampTicket(passengers[0].ticket);

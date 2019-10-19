@@ -1,18 +1,22 @@
 # Trafikbolaget
 ## En genomgång av javaScript i kapitelform
 I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser uppgiften.
-### Kapitel 14 - Lämna företräde till de avstigande
-#### Kunskaper: Funktioner & moduler
-#### Uppgift: Utveckla bussens loadPassengers-funktion.
-För närvarande är loadPassengers en funktion som tar emot så många passagerar bussen kan.
+### Kapitel 15 - Stämpla biljetten
+#### Kunskaper: Date
+#### Uppgift: Skapa biljetter och tidsstämplar.
+Nu har det blivit dags att kontrollera om passagerarna har rätt att åka med bussen. Därför ska vi skapa biljetter och någon form av kontroll av desamma.
 
-Men det bästa vore att varje gång som bussen kommer till en hållplats, att den först släpper av de som ska till den destinationen, och sedan släpper på så många som det får plats.
+Skapa i en ny modul ett biljett-objekt som har egenskaperna id, credit och timestamps. Id ska ha ett numerärt värde, likaså credit (och sätt defaultvärdet till 10) medan timestamps ska ha en tom array som värde. I den ska vi lagra alla "stämplar".
 
-Nu kan det också vara läge att ta bort den kod som "kastar" ett error om bussen är full. Det är inte riktigt rätt sätt att hantera den nya strukturen i koden.
+På sikt behöver vi också ändra passenger-objektet, så att alla passagerare har en egenskap som kan hålla ett ticket-objekt, men just nu kan vi nöja oss med att i consolen göra en direkt tilldelning 
+
+´´´javascript
+passengers[0].ticket = ticket;
+´´´
+
+Skapa därefter en funktion som tilldelar en biljett till en passagerare, samt en funktion som stämplar biljetten och då även minskar värdet på credit. Det är också bra om vi i den funktionen genomför en kontroll om biljetten har tillräckligt med credit.
 
 #### Tekniker & metoder
 ```javascript
-function
-import
-export
+Date
 ``` 
