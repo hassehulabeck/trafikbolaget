@@ -30,3 +30,4 @@ git checkout -b ny-branch-namn
 12. Moduler - Export & Import
 13. Sprid ut passagerarna - Funktioner
 14. Lämna företräde till de avstigande - Funktioner & moduler
+15. Stämpla biljetten! - Date & moduler
