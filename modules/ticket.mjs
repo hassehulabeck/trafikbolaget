@@ -13,9 +13,19 @@ function Ticket(credit = 10) {
 
 function stampTicket(ticket) {
     if (ticket.isValid()) {
-        ticket.credit--;
-        // Skapa ett timestamp i unixdate-format.
-        ticket.timestamps.push(new Date().getTime());
+        // Skapa en tidspunkt som är NU.
+        let now = new Date().getTime();
+        // Kolla om senaste stämplingen är äldre än 90 minuter.
+        // 90 minuter är 90 * 60 * 1000 = 5 400 000 millisekunder
+        let latestStamp = ticket.timestamps[ticket.timestamps - 1];
+        if (latestStamp + 5400000 < now) {
+            // Det har gått mer än 90 minuter sedan senaste stämplingen
+            ticket.credit--;
+            // Skapa ett nytt timestamp i unixdate-format.
+            ticket.timestamps.push(now);
+        } else {
+            return "Din senaste stämpling är fortfarande giltig.";
+        }
     } else {
         return "Inga krediter kvar.";
     }
