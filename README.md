@@ -31,3 +31,4 @@ git checkout -b ny-branch-namn
 13. Sprid ut passagerarna - Funktioner
 14. Lämna företräde till de avstigande - Funktioner & moduler
 15. Stämpla biljetten! - Date & moduler
+16. Kolla biljetten mer noggrant - Date
