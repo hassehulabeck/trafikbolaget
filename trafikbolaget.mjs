@@ -12,3 +12,8 @@ linje1.forEach(stop => {
     newStop.innerHTML = "<div>" + stop.name + "</div>";
     linjen.appendChild(newStop);
 });
+
+// Placera ut bussen någonstans.
+bus.position = 0;
+
+// Rendera bussen
