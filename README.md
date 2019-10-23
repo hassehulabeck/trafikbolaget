@@ -20,6 +20,11 @@ Skapa sedan en katalog (modules) och i den skapar du sedan de tre filerna nedan 
 
 Kopiera all passagerarkod och lägg den i en fil som heter passengers.mjs och lägg all busskod i en fil som heter bus.mjs och lägg all linjekod i en fil som heter lines.mjs. I alla dess filer ska du exportera koden.
 I  trafikbolaget.js importerar du sedan koden från dessa tre filer. Kolla sedan att du kommer åt de olika variablerna passengers, bus och linje1.
+**OBS** 
+Tänk på att du inte kommer åt importerade värden i consolen. En väg runt det är att skriva (om du har importerat variabeln x) 
+```javascript
+window.x = x;
+```
 
 #### Tekniker & metoder
 ```javascript
