@@ -16,4 +16,18 @@ linje1.forEach(stop => {
 // Placera ut bussen någonstans.
 bus.position = 0;
 
-// Rendera bussen
+
+// Flytta bussen i en loop, ett steg varje sekund.
+var timer = setInterval(() => {
+    bus.move(linje1);
+    linjen.childNodes.forEach((stop) => {
+        // Ta bort eventuell bus.
+        stop.classList.remove("busPresent");
+    })
+    // Rendera bussen
+    linjen.childNodes[bus.position].classList.add("busPresent");
+}, 1000)
+
+function stopTheTraffic() {
+    clearInterval(timer);
+}

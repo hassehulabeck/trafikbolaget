@@ -16,3 +16,10 @@ li div {
     min-width: 10em;
     /* Förstår inte varför divven inte anpassar sin bredd till innehållet. Att lösa senare... */
 }
+
+.busPresent {
+    background-image: url("bus.svg");
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: 2px;
+}
