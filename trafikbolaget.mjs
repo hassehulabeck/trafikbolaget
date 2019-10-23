@@ -9,6 +9,6 @@ var linjen = document.getElementById("linje1");
 
 linje1.forEach(stop => {
     let newStop = document.createElement("li");
-    newStop.innerText = stop.name;
+    newStop.innerHTML = "<div>" + stop.name + "</div>";
     linjen.appendChild(newStop);
 });
