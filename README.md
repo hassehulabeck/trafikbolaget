@@ -13,8 +13,8 @@ När bussen stannar händer följande i den bästa av världar.
 Skriv om funktionen så att den följer ordningen i listan. Du kan bortse från den första punkten, eftersom den strider mot naturens lagar (i alla fall i Göteborg....(mutter, mutter))
 #### Tekniker & metoder
 ```javascript
-Async
-Await
-Callback
+async
+await
+callback
 Promise
 ``` 
