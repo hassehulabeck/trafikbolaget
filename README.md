@@ -33,7 +33,7 @@ git checkout -b ny-branch-namn
 15. Stämpla biljetten! - Date & moduler
 16. Kolla biljetten mer noggrant - Date
 17. Visualisera bussen och linjen - DOM
+18. Sälj biljetter till passagerarna - Objekt och funktioner
 #### Kommande övningar
-18. Köp biljetter - Objekt och funktioner
 19. Barnvagn - Asynkron kod
-20. 
+20. Hämta data - AJAX/Fetch
