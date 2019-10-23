@@ -32,8 +32,8 @@ git checkout -b ny-branch-namn
 14. Lämna företräde till de avstigande - Funktioner & moduler
 15. Stämpla biljetten! - Date & moduler
 16. Kolla biljetten mer noggrant - Date
-#### Kommande övningar
 17. Visualisera bussen och linjen - DOM
+#### Kommande övningar
 18. Köp biljetter - Objekt och funktioner
 19. Barnvagn - Asynkron kod
 20. 
