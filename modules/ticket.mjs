@@ -1,14 +1,30 @@
 var ticketId = 1;
+var ticketTypes = [{
+        id: 0,
+        name: "Enkel",
+        value: 1
+    },
+    {
+        id: 1,
+        name: "Tre resor",
+        value: 3
+    },
+    {
+        id: 2,
+        name: "Tio räcker länge",
+        value: 10
+    }
+];
 
-function Ticket(credit = 10) {
+function Ticket(ticketType) {
     this.id = ticketId,
-        this.credit = credit,
+        this.ticketType = ticketType,
+        this.credit = ticketTypes[ticketType].value,
         this.timestamps = [],
         this.isValid = function () {
             if (this.credit > 0)
                 return true;
         }
-
 }
 
 function stampTicket(ticket) {
