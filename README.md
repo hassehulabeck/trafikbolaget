@@ -24,6 +24,7 @@ I  trafikbolaget.js importerar du sedan koden från dessa tre filer. Kolla sedan
 Tänk på att du inte kommer åt importerade värden i consolen. En väg runt det är att skriva (om du har importerat variabeln x) 
 ```javascript
 window.x = x;
+// Då kan du komma åt variablen genom att skriva x i console.
 ```
 
 #### Tekniker & metoder
