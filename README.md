@@ -10,7 +10,7 @@ När bussen stannar händer följande i den bästa av världar.
 * Eventuella barnvagnar/rullstolar/etc får gå på.
 * Först därefter går övriga passagerare på.
 
-Skriv om funktionen så att den följer ordningen i listan.
+Skriv om funktionen så att den följer ordningen i listan. Du kan bortse från den första punkten, eftersom den strider mot naturens lagar (i alla fall i Göteborg....(mutter, mutter))
 #### Tekniker & metoder
 ```javascript
 Async
