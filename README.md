@@ -1,15 +1,20 @@
 # Trafikbolaget
 ## En genomgång av javaScript i kapitelform
 I varje kapitel berörs ett eller flera kunskapsområden. Skriv kod som löser uppgiften.
-### Kapitel 18 - Sälj biljetter till passagerarna
-#### Kunskaper: Funktioner
-#### Uppgift: Skapa en "biljett-automat".
-Våra passagerare behöver kunna köpa en biljett med 10 resor på, eller kanske en med 3 resor eller bara en enkel biljett. Skapa en funktion som låter en passagerare köpa en av dessa tre biljetter. 
-Automatisera så att alla passagerare får varsin biljett från början.
+### Kapitel 19 - Barnvagnen ska på
+#### Kunskaper: Asynkron kod
+#### Uppgift: Utveckla funktionen som släpper på och av passagerare.
+När bussen stannar händer följande i den bästa av världar.
+* De som väntar på bussen ställer sig **inte** precis framför dörrarna.
+* De som ska gå av går av.
+* Eventuella barnvagnar/rullstolar/etc får gå på.
+* Först därefter går övriga passagerare på.
 
-**Tips**: Lagra biljetttyperna i en array i tickets-modulen, så att du kan använda dess indexvärde för att avgöra vilken biljett som passageraren ska köpa.
+Skriv om funktionen så att den följer ordningen i listan.
 #### Tekniker & metoder
 ```javascript
-Funktioner
-Array
+Async
+Await
+Callback
+Promise
 ``` 
