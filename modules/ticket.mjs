@@ -57,5 +57,6 @@ function stampTicket(ticket) {
 export {
     ticketId,
     Ticket,
-    stampTicket
+    stampTicket,
+    ticketTypes
 };
