@@ -29,7 +29,6 @@ var bus = {
     passengers: [],
     position: null,
     direction: 1,
-    isAtStop: false,
     maxPassengers: 20,
     emptySeats: function () {
         return this.maxPassengers - this.passengers.length;
@@ -53,3 +52,11 @@ var bus = {
 
 // Placera bussen i en ände av linje1.
 bus.position = 0;
+
+var timer = setInterval(() => {
+    bus.move();
+}, 1000)
+
+function stopBus() {
+    clearInterval(timer);
+}
